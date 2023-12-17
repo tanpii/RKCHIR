@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Профиль</title>
+        <link rel="icon" type="image/png" href="images/cookie_monster.png">
+        <link rel="stylesheet" href="/style.css">
+        <script src="https://kit.fontawesome.com/be9639af8e.js" crossorigin="anonymous"></script>
+        <script src="profile.js" type="text/javascript" defer></script>
+        <script src="burger.js" type="text/javascript" defer></script>
+        <script type="module" src="cart_count.js" type="text/javascript" defer></script>
+    </head>
+    <body>
+        <div id="loginForm" class="popup">
+            <div class="floating-cookies">
+                <div class="floating-cookie"><img src="images/cookie1.png"></div>
+                <div class="floating-cookie"><img src="images/cookie2.png"></div>
+                <div class="floating-cookie"><img src="images/cookie3.png"></div>
+                <div class="floating-cookie"><img src="images/cookie1.png"></div>
+                <div class="floating-cookie"><img src="images/cookie3.png"></div>
+            </div>
+            <form class="login-form">
+                <h1>ВХОД</h1>
+                <input type="email" placeholder="Почта💌" id="email" name="email" required>
+                <input type="password" placeholder="Пароль🤫" id="password" name="password" required>
+                <a href="profile.html" id="login-button">ВОЙТИ</a>
+                <a href="profile.html" id="registration-button">Ещё нет аккаунта</a>
+            </form>
+            <button id="closeLoginFormButton">Закрыть</button>
+        </div>
+        <header>
+            <div class="center-menu">
+                <h1 id="title">MONSTER<br> CRUNCH</h1>
+                <div class="logo">
+                    <img src="images/cookie_monster.png"/>
+                </div>
+                <nav class="menu">
+                    <ul>
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="catalog.html">Наше печенье</a></li>
+                        <li><a href="reviews.html">Отзывы</a></li>
+                        <li><a id="showLoginFormButton" href="#profile">Личный кабинет</a></li>
+                        <li><a class="cart" href="cart.html">
+                            <span class="cart-count"></span>
+                            <img src="images/icons/basket.png" >
+                        </a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="mobile">
+                <div class="header-burger"><span></span></div>
+                <a class="mobile-cart" href="cart.html">
+                    <span class="cart-count"></span>
+                    <img src="images/icons/basket.png">
+                </a>
+            </div>
+        </header>
+        <nav class="mobile-menu">
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="catalog.html">Наше печенье</a></li>
+                <li><a href="reviews.html">Отзывы</a></li>
+                <li><a id="showLoginFormButtonMobile" href="#profile">Личный кабинет</a></li>
+            </ul>
+        </nav>
+        <main>
+            <div class="profile-container">
+                <div class="profile-info">
+                    <img class="profile-photo" src="images/profile photo.JPG" alt="profile photo">
+                    <div class="profile-personal">
+                        <span class="profile-personal__name"><b>ИМЯ:</b> Таня Порсева</span>
+                        <span class="profile-personal__email"><b>ПОЧТА:</b> useremail@mail.ru</span>
+                        <span class="profile-personal__number"><b>ТЕЛЕФОН:</b> +7(999) 888-77-66</span>
+                        <button class="profile-personal__change-button">ИЗМЕНИТЬ</button>
+                    </div>
+                </div>
+                <div class="orders">
+                    <span class="orders-title">МОИ ЗАКАЗЫ</span>
+                    <div class="order-card">
+                        <span class="order-card__time">16 декабря в 12:15</span>
+                        <span class="order-card__cost">₽1298</span>
+                        <div class="order-products">
+                            <div class="order-product"><img src="images/cookie_type/amorous.jpg" alt="amorous"></div>
+                            <div class="order-product"><img src="images/cookie_type/lovely_puppy.jpg" alt="lovely_puppy"></div>
+                            <div class="order-product"><img src="images/cookie_type/ginger_cat.jpg" alt="ginger_cat"></div>
+                        </div>
+                    </div>
+                    <div class="order-card">
+                        <span class="order-card__time">13 ноября в 12:15</span>
+                        <span class="order-card__cost">₽1098</span>
+                        <div class="order-products">
+                            <div class="order-product"><img src="images/cookie_type/choco_bear.jfif" alt="choco bear"></div>
+                            <div class="order-product"><img src="images/cookie_type/pink_bang.jpg" alt="pink_bang"></div>
+                        </div>
+                    </div>
+                    <div class="order-card">
+                        <span class="order-card__time">1 сентября в 19:48</span>
+                        <span class="order-card__cost">₽2527</span>
+                        <div class="order-products">
+                            <div class="order-product"><img src="images/cookie_type/softness.jpg" alt="softness"></div>
+                            <div class="order-product"><img src="images/cookie_type/green_tea.jpg" alt="green_tea"></div>
+                            <div class="order-product"><img src="images/cookie_type/marshmallow.jpg" alt="marshmallow"></div>
+                            <div class="order-other">+5</div>
+                        </div>
+                    </div>
+                    <div class="order-card">
+                        <span class="order-card__time">19 августа в 00:32</span>
+                        <span class="order-card__cost">₽3459</span>
+                        <div class="order-products">
+                            <div class="order-product"><img src="images/cookie_type/oreo_boom.jpg" alt="oreo_boom"></div>
+                            <div class="order-product"><img src="images/cookie_type/pink_bang.jpg" alt="pink_bang"></div>
+                            <div class="order-product"><img src="images/cookie_type/marshmallow.jpg" alt="marshmallow"></div>
+                            <div class="order-other">+7</div>
+                        </div>
+                    </div>
+                    <div class="order-card">
+                        <span class="order-card__time">2 июля в 13:07</span>
+                        <span class="order-card__cost">₽948</span>
+                        <div class="order-products">
+                            <div class="order-product"><img src="images/cookie_type/oreo_boom.jpg" alt="oreo_boom"></div>
+                            <div class="order-product"><img src="images/cookie_type/nut_dream.jpg" alt="nut_dream"></div>
+                            <div class="order-product"><img src="images/cookie_type/carrot_lover.jpg" alt="carrot_lover"></div>
+                        </div>
+                    </div>
+                    <div class="order-card">
+                        <span class="order-card__time">12 июня в 12:15</span>
+                        <span class="order-card__cost">₽1898</span>
+                        <div class="order-products">
+                            <div class="order-product"><img src="images/cookie_type/sugar_nightmare.jfif" alt="sugar_nightmare"></div>
+                            <div class="order-product"><img src="images/cookie_type/green_tea.jpg" alt="green tea"></div>
+                            <div class="order-product"><img src="images/cookie_type/choco_bear.jfif" alt="choco bear"></div>
+                            <div class="order-other">+3</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="favourite-products">
+                    
+                </div>
+            </div>
+        </main>
+        <div class="for_footer">
+            <footer>
+                <div class="footer_container">
+                    <div class="sec aboutus">
+                        <h2>О нас</h2>
+                        <p>Monster Crunch - это фабрика по производству печенья под руководством Александра Куликова. Важным принципом Monster Crunch является внимание к деталям и любовь к каждой печеньке.
+                        </p>
+                        <ul class="sci">
+                            <li><a id="yt" href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                            <li><a id="tg" href="#"><i class="fa-brands fa-telegram"></i></a></li>
+                            <li><a id="tel" href="#"><i class="fa-brands fa-whatsapp"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="sec quicklinks">
+                        <h2>Быстрая навигация</h2>
+                        <ul>
+                            <li><a href="index.html">Главная</a></li>
+                            <li><a href="catalog.html">Наше печенье</a></li>
+                            <li><a href="reviews.html">Отзывы</a></li>
+                            <li><a href="cart.html">Корзина</a></li>
+                        </ul>
+                    </div>
+                    <div class="sec contact">
+                        <h2>Свяжитесь с нами</h2>
+                        <ul class="info">
+                            <li>
+                                <span><i class="fa-solid fa-map"></i></i></i></span>
+                                <span>
+                                    Мичуринский пр-т 12, к2<br>
+                                    Москва,<br>
+                                    Россия
+                                </span>
+                            </li>
+                            <li>
+                                <span><i class="fa-solid fa-phone"></i></i></i></span>
+                                <p><a href="tel:+79624217078">+7(951)194-01-52</a></p>
+                            </li>
+                            <li>
+                                <span><i class="fa-solid fa-envelope"></i></i></i></span>
+                                <p><a href="mailto:monstercrunch@mail.ru">monstercrunch@mail.ru</a></p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>
