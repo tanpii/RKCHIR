@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>MonsterCrunch</title>
+      <link rel="icon" type="image/png" href="images/cookie_monster.png">
+      <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="login">
+      <div class="choice-line">
+        <span class="choice">РЕГИСТРАЦИЯ</span>
+        <span class="choice">ВХОД</span>
+      </div>
+      <form class="registration-form" method="post" autocomplete="off">
+        <label class="label label__name" for="name">🙋🏻‍♂️ Как тебя зовут?</label>
+        <div class="input-container input-container__name"><input type="text" placeholder="...моё имя" id="name" name="name" required autofocus></div>
+        <label class="label label__email" for="email">💌 Какой почтой ты пользуешься?</label>
+        <div class="input-container"><input type="email" placeholder="...моя почта" id="email" name="email" required></div>
+        <label class="label label__number" for="number">🤳 По какому номеру связываться?</label>
+        <div class="input-container"><input type="number" placeholder="...мой телефон" id="number" name="number" required></div>
+        <label class="label label__birthday" for="birthday">🎁 Когда у тебя день рождения?</label>
+        <div class="input-container"><input type="date" placeholder="...мой день рождения" id="birthday" name="birthday" readonly></div>
+        <label class="label label__password" for="password">🤫 Придумай надежный пароль!</label>
+        <div class="input-container"><input type="password" placeholder="...мой пароль" id="password" name="password" required></div>
+        <button type="submit">ВОЙТИ</button>
+      </div>
+    </div>
+  </body>
+</html>
